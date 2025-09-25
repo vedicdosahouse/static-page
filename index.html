@@ -4,93 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Davangere Benne Dose</title>
+    <title>Davangere Benne Dosa</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #fafafa;
+        /* Reset */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: #fafafa;
+            color: #333;
         }
 
         header {
-            background: #e67e22;
-            color: white;
-            padding: 1rem;
+            background: #ff9933;
+            color: #fff;
             text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            font-style: italic;
         }
 
         .container {
             max-width: 900px;
-            margin: auto;
-            padding: 2rem;
+            margin: 2rem auto;
+            padding: 1rem;
         }
 
-        h1 {
-            color: #333;
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #444;
             text-align: center;
         }
 
-        .feedback {
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        label {
-            display: block;
-            margin: 0.5rem 0 0.2rem;
-        }
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 0.5rem;
+        p {
+            font-size: 1rem;
             margin-bottom: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            text-align: justify;
         }
 
-        button {
-            background: #e67e22;
-            color: white;
+        iframe {
+            width: 100%;
+            min-height: 700px;
             border: none;
-            padding: 0.7rem 1.5rem;
-            cursor: pointer;
-            border-radius: 5px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        button:hover {
-            background: #cf711f;
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #ff9933;
+            color: #fff;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+            }
         }
     </style>
 </head>
 
 <body>
+
     <header>
-        <h1>Davangere Benne Dose</h1>
+        <h1>दावणगेरे बेन्ने डोसा</h1>
+        <p>Made with Love & Butter 🧈</p>
     </header>
 
     <div class="container">
-        <p><strong>Davangere benne dose</strong> (or dosey, dāvaṇagere beṇṇe dōse) or butter dosa is a type of dosa
-            which traces its origin to the city of Davanagere in Karnataka, India. The term "benne dose" in Kannada
-            means simply "butter dosa." It is prepared by the addition of a generous amount of butter while preparing
-            the normal dosa, and accompanied by coconut chutney.</p>
+        <section id="about">
+            <h2>About Davangere Benne Dosa</h2>
+            <p>
+                Davangere benne dose (or butter dosa) is a type of dosa that traces its origin to the city of Davanagere
+                in Karnataka, India.
+                The term "benne dose" in Kannada simply means "butter dosa."
+                It is prepared by adding a generous amount of butter while cooking, and is accompanied by coconut
+                chutney.
+                Its batter is unique, made from rice, dal, puffed rice, and other ingredients, traditionally prepared on
+                a wood-fired pan.
+                Unlike masala dosa or set dosa, it is smaller in size, but rich in taste with more butter.
+                It is always served hot with liberal helpings of butter sprinkled on top.
+            </p>
+        </section>
 
-        <p>Its batter is very different comprising a mixture of rice, dal, puffed rice, etc., and is prepared on a
-            wood-fired pan. It is similar to masala dosa or set dosa but smaller in size, made out of rice batter and
-            much more butter. It is served with liberal helpings of butter sprinkled on it.</p>
-
-        <div class="feedback">
-            <h2>We value your feedback!</h2>
+        <section id="feedback">
+            <h2>We’d love your feedback!</h2>
+            <p style="text-align:center;">Please take a moment to share your experience.</p>
             <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSfeTMKLoL3PGh1htS8e0N2WxULxyxWfvoUIDOGX6IjC-aEM9w/viewform?embedded=true"
                 width="640" height="462" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
+        </section>
     </div>
+
+    <footer>
+        &copy; 2025 Vedic Dosa House | Follow us on Instagram: <b>@vedicdosahouse</b>
+    </footer>
+
 </body>
 
 </html>
