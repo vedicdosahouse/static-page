@@ -2,92 +2,104 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vedic Dosa House | Launching Soon</title>
-  <style>
-    :root {
-      --bg-color: #fdfdfd;
-      --text-color: #1f2937;
-      --accent-color: #db3a34;
-      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davangere Benne Dose</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
 
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-family);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 1.5rem;
-    }
+        header {
+            background: #e67e22;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
 
-    .container {
-      max-width: 600px;
-    }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
 
-    .branding {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 1.5rem;
-      color: var(--accent-color);
-      letter-spacing: 1px;
-    }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
 
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-    }
+        .feedback {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      color: #4b5563;
-    }
+        label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
 
-    .notify-button {
-      background-color: var(--accent-color);
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-    .notify-button:hover {
-      background-color: #b82e2a;
-    }
+        button {
+            background: #e67e22;
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
 
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      .branding {
-        font-size: 1.5rem;
-      }
-
-      p {
-        font-size: 1rem;
-      }
-    }
-  </style>
+        button:hover {
+            background: #cf711f;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="branding">Vedic Dosa House</div>
-    <h1>We're Launching Soon</h1>
-    <p>Bringing the authentic taste of South India to your plate. Stay tuned!</p>
-    <!-- <button class="notify-button">Notify Me</button> -->
-  </div>
+    <header>
+        <h1>Davangere Benne Dose</h1>
+    </header>
+
+    <div class="container">
+        <p><strong>Davangere benne dose</strong> (or dosey, dāvaṇagere beṇṇe dōse) or butter dosa is a type of dosa
+            which traces its origin to the city of Davanagere in Karnataka, India. The term "benne dose" in Kannada
+            means simply "butter dosa." It is prepared by the addition of a generous amount of butter while preparing
+            the normal dosa, and accompanied by coconut chutney.</p>
+
+        <p>Its batter is very different comprising a mixture of rice, dal, puffed rice, etc., and is prepared on a
+            wood-fired pan. It is similar to masala dosa or set dosa but smaller in size, made out of rice batter and
+            much more butter. It is served with liberal helpings of butter sprinkled on it.</p>
+
+        <div class="feedback">
+            <h2>We value your feedback!</h2>
+            <form name="feedback-form" method="POST" data-netlify="true">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="rating">How would you rate the taste?</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+                <label for="comments">Your Feedback:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
