@@ -16,41 +16,51 @@
         body {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            background: #fafafa;
+            background: #fff8f0;
             color: #333;
         }
 
         header {
-            background: #ff9933;
+            background: linear-gradient(135deg, #ff9933, #ff5e62);
             color: #fff;
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 2.5rem 1rem;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
         header h1 {
-            font-size: 2rem;
+            font-size: 2.4rem;
             margin-bottom: 0.5rem;
+            letter-spacing: 1px;
         }
 
         header p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-style: italic;
+            opacity: 0.95;
         }
 
         .container {
-            max-width: 900px;
-            margin: 2rem auto;
+            max-width: 950px;
+            margin: 3rem auto;
             padding: 1rem;
         }
 
         section {
-            margin-bottom: 2.5rem;
+            margin-bottom: 3rem;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
         }
 
         h2 {
             margin-bottom: 1rem;
-            color: #444;
+            color: #ff5e62;
             text-align: center;
+            font-size: 1.8rem;
         }
 
         p {
@@ -61,24 +71,50 @@
 
         iframe {
             width: 100%;
-            min-height: 700px;
+            min-height: 650px;
             border: none;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Instagram follow section */
+        .follow-us {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .follow-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #fd1d1d, #fcb045, #833ab4);
+            color: #fff;
+            padding: 0.8rem 1.6rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .follow-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
         }
 
         footer {
             text-align: center;
-            padding: 1rem;
-            background: #ff9933;
+            padding: 1.2rem;
+            background: linear-gradient(135deg, #ff9933, #ff5e62);
             color: #fff;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             margin-top: 2rem;
+        }
+
+        footer b {
+            color: #ffe17b;
         }
 
         @media (max-width: 768px) {
             header h1 {
-                font-size: 1.6rem;
+                font-size: 1.9rem;
             }
 
             header p {
@@ -87,6 +123,10 @@
 
             p {
                 font-size: 0.95rem;
+            }
+
+            iframe {
+                min-height: 500px;
             }
         }
     </style>
@@ -103,15 +143,11 @@
         <section id="about">
             <h2>About Davangere Benne Dosa</h2>
             <p>
-                Davangere benne dose (or butter dosa) is a type of dosa that traces its origin to the city of Davanagere
-                in Karnataka, India.
-                The term "benne dose" in Kannada simply means "butter dosa."
-                It is prepared by adding a generous amount of butter while cooking, and is accompanied by coconut
-                chutney.
-                Its batter is unique, made from rice, dal, puffed rice, and other ingredients, traditionally prepared on
-                a wood-fired pan.
-                Unlike masala dosa or set dosa, it is smaller in size, but rich in taste with more butter.
-                It is always served hot with liberal helpings of butter sprinkled on top.
+                Davangere Benne Dose is a special type of dosa from Davanagere, Karnataka, known for its crispy texture
+                and generous use of butter- "benne" means butter in Kannada. This smaller-than-usual dosa is made from a
+                unique batter of rice, lentils, and puffed rice, cooked traditionally on a wood-fired pan. Served with
+                spicy coconut chutney and a simple potato filling, it offers a delicious blend of buttery, crispy, and
+                soft flavors that’s a beloved local favorite.
             </p>
         </section>
 
@@ -119,8 +155,12 @@
             <h2>We’d love your feedback!</h2>
             <p style="text-align:center;">Please take a moment to share your experience.</p>
             <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSfeTMKLoL3PGh1htS8e0N2WxULxyxWfvoUIDOGX6IjC-aEM9w/viewform?embedded=true"
-                width="640" height="462" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfeTMKLoL3PGh1htS8e0N2WxULxyxWfvoUIDOGX6IjC-aEM9w/viewform?embedded=true">Loading…</iframe>
+
+            <div class="follow-us">
+                <p>👉 Follow us on Instagram for updates & specials:</p>
+                <a class="follow-btn" href="https://instagram.com/vedicdosahouse" target="_blank">@vedicdosahouse</a>
+            </div>
         </section>
     </div>
 
